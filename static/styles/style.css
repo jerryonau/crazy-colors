@@ -389,20 +389,7 @@ h6 {
 
 .footer {
   margin: 0;
-  padding-top: 300px;
-  background-image: url(../images/footer.png?v=nqz8orr8);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  color: #fff;
-}
-.footer a,
-.footer h3 {
-  color: #fff;
-}
-.footer a:hover,
-.footer h3:hover {
-  color: #a8cb26;
+  padding-top: 20px;
 }
 .footer h3 {
   text-transform: uppercase;
@@ -413,6 +400,15 @@ h6 {
   height: 20px;
 }
 .footer p {
+  line-height: 2;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer ul a {
+  text-transform: capitalize;
   line-height: 2;
 }
 .footer .copyright {
@@ -639,7 +635,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/home/book-bg.png?v=nqz8orr8");
+  background-image: url("../images/home/book-bg.png?v=1rxdjv7c");
 }
 .section-call .row {
   align-items: center;
@@ -700,10 +696,10 @@ h6 {
   border-radius: 300px 0 0 300px;
 }
 .section-case .carousel button .carousel-control-prev-icon {
-  background-image: url(../images/home/icon/arrow-left.svg?v=nqz8orr8);
+  background-image: url(../images/home/icon/arrow-left.svg?v=1rxdjv7c);
 }
 .section-case .carousel button .carousel-control-next-icon {
-  background-image: url(../images/home/icon/arrow-right.svg?v=nqz8orr8);
+  background-image: url(../images/home/icon/arrow-right.svg?v=1rxdjv7c);
 }
 .section-case .carousel .case-img {
   overflow: hidden;
