@@ -1,0 +1,1 @@
+module.exports=[{name:"home",path:"/",title:"Home",target:"_self",icon:""},{name:"About Us",path:"/about",title:"About Us",target:"_self",icon:""},{name:"Services",path:"/services",title:"Services",target:"_self",icon:""},{name:"Gallery",path:"/gallery",title:"Gallery",target:"_self",icon:""},{name:"Contact Us",path:"/contact",title:"Contact Us",target:"_self",icon:""}];

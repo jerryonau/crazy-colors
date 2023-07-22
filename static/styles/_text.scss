@@ -1,0 +1,206 @@
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+
+  &-nowrap {
+    white-space: nowrap;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-break {
+    word-break: break-word;
+  }
+
+  &-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-line-through {
+    text-decoration: line-through;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-overline {
+    text-decoration: overline;
+  }
+
+  &-none {
+    text-decoration: none;
+  }
+
+  &-primary {
+    color: $primary !important;
+  }
+
+  &-secondary {
+    color: $secondary !important;
+  }
+
+  &-success {
+    color: $success !important;
+  }
+
+  &-info {
+    color: $info !important;
+  }
+
+  &-warning {
+    color: $warning !important;
+  }
+
+  &-gold {
+    color: $gold !important;
+  }
+
+  &-danger {
+    color: $danger !important;
+  }
+
+  &-light {
+    color: $light !important;
+  }
+
+  &-dark {
+    color: $dark !important;
+  }
+
+  &-body {
+    color: $body-color !important;
+  }
+
+  &-white {
+    color: $white !important;
+  }
+
+  &-black-50 {
+    color: rgba($black, 0.5) !important;
+  }
+
+  &-white-50 {
+    color: rgba($white, 0.5) !important;
+  }
+
+  &-gray {
+    color: $gray !important;
+  }
+
+  &-reset {
+    color: inherit !important;
+  }
+
+  &-reset-hover {
+    color: inherit !important;
+    &:hover {
+      color: inherit !important;
+    }
+  }
+
+  &-small {
+    font-size: 0.875rem !important;
+  }
+
+  &-smaller {
+    font-size: 0.75rem !important;
+  }
+
+  &-smallest {
+    font-size: 0.5rem !important;
+  }
+}
+
+.bold {
+  font-weight: bold !important;
+  &-normal {
+    font-weight: normal !important;
+  }
+
+  &-light {
+    font-weight: lighter !important;
+  }
+
+  &-bolder {
+    font-weight: bolder !important;
+  }
+
+  &-100 {
+    font-weight: 100 !important;
+  }
+
+  &-200 {
+    font-weight: 200 !important;
+  }
+
+  &-300 {
+    font-weight: 300 !important;
+  }
+
+  &-400 {
+    font-weight: 400 !important;
+  }
+
+  &-500 {
+    font-weight: 500 !important;
+  }
+
+  &-600 {
+    font-weight: 600 !important;
+  }
+
+  &-700 {
+    font-weight: 700 !important;
+  }
+
+  &-800 {
+    font-weight: 800 !important;
+  }
+
+  &-900 {
+    font-weight: 900 !important;
+  }
+
+  &-inherit {
+    font-weight: inherit !important;
+  }
+
+  &-initial {
+    font-weight: initial !important;
+  }
+
+  &-unset {
+    font-weight: unset !important;
+  }
+}
