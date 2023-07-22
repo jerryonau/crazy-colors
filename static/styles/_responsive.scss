@@ -1,19 +1,7 @@
 @media (max-width: 1024px) {
   .header {
     &-navbar {
-      background-color: #fff;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-
       .navbar-brand {
-      }
-
-      .ms-5 {
-        margin-left: 0 !important;
-      }
-
-      .nav-item {
-        position: relative;
-        margin-left: 0;
       }
     }
   }
@@ -24,15 +12,12 @@
     position: relative;
   }
 
-  .footer {
-    margin: 0;
-    padding-top: 100px;
-  }
-
   .home {
     &-carousel {
       position: relative;
       z-index: 1;
+      min-height: 400px;
+
       .container {
         display: flex;
         justify-content: center;
@@ -41,18 +26,20 @@
       .row {
         justify-content: center;
       }
-      .info-left {
-        display: flex;
-        justify-content: flex-end;
+
+      .mt-5 {
+        margin-top: 0 !important;
+        text-align: center;
       }
+
       h1 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 30px;
         text-align: center;
       }
 
       &-nav {
-        bottom: 0;
+        display: none;
       }
     }
 

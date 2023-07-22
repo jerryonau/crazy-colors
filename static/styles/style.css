@@ -535,6 +535,7 @@ h6 {
   position: relative;
   z-index: 1;
   display: flex;
+  min-height: 400px;
 }
 .home-carousel h1 {
   text-transform: uppercase;
@@ -635,7 +636,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/home/book-bg.png?v=1rxdjv7c");
+  background-image: url("../images/home/book-bg.png?v=rbatug2j");
 }
 .section-call .row {
   align-items: center;
@@ -696,10 +697,10 @@ h6 {
   border-radius: 300px 0 0 300px;
 }
 .section-case .carousel button .carousel-control-prev-icon {
-  background-image: url(../images/home/icon/arrow-left.svg?v=1rxdjv7c);
+  background-image: url(../images/home/icon/arrow-left.svg?v=rbatug2j);
 }
 .section-case .carousel button .carousel-control-next-icon {
-  background-image: url(../images/home/icon/arrow-right.svg?v=1rxdjv7c);
+  background-image: url(../images/home/icon/arrow-right.svg?v=rbatug2j);
 }
 .section-case .carousel .case-img {
   overflow: hidden;
@@ -752,29 +753,15 @@ h6 {
 }
 
 @media (max-width: 1024px) {
-  .header-navbar {
-    background-color: #fff;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  }
-  .header-navbar .ms-5 {
-    margin-left: 0 !important;
-  }
-  .header-navbar .nav-item {
-    position: relative;
-    margin-left: 0;
-  }
   .section {
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
   }
-  .footer {
-    margin: 0;
-    padding-top: 100px;
-  }
   .home-carousel {
     position: relative;
     z-index: 1;
+    min-height: 400px;
   }
   .home-carousel .container {
     display: flex;
@@ -784,17 +771,17 @@ h6 {
   .home-carousel .row {
     justify-content: center;
   }
-  .home-carousel .info-left {
-    display: flex;
-    justify-content: flex-end;
+  .home-carousel .mt-5 {
+    margin-top: 0 !important;
+    text-align: center;
   }
   .home-carousel h1 {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
   .home-carousel-nav {
-    bottom: 0;
+    display: none;
   }
   .home .section-choose .choose-item {
     justify-content: flex-start;
