@@ -1,0 +1,49 @@
+$steam-size: 200px;
+$steam-speed: 20s;
+@keyframes bgUp {
+  0% {
+    background-position-y: $steam-size;
+  }
+  100% {
+    background-position-y: -$steam-size;
+  }
+}
+
+.steam {
+  overflow: hidden;
+  position: relative;
+  width: $steam-size;
+  height: $steam-size;
+  background-repeat: no-repeat;
+  background-size: $steam-size $steam-size;
+  background-position: center $steam-size;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8yIiBkYXRhLW5hbWU9IuWbvuWxgiAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3Ny4zNyAyNjMuNjUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgICAgZmlsbC1ydWxlOiBldmVub2RkOwogICAgICAgIHN0cm9rZTogIzAwMDsKICAgICAgICBzdHJva2UtbWl0ZXJsaW1pdDogMTA7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAxMnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iX+WbvuWxgl8xLTIiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzQuOTEsMy44M2MtMTA2LDEyOCwxMjMsMTA1LTIsMjU2Ii8+CiAgPC9nPgo8L3N2Zz4=);
+  animation: bgUp $steam-speed linear infinite;
+  opacity: 0.1;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    display: block;
+    width: $steam-size;
+    height: $steam-size;
+    background-repeat: no-repeat;
+    background-size: $steam-size $steam-size;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX+WbvuWxgl8yIiBkYXRhLW5hbWU9IuWbvuWxgiAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3Ny4zNyAyNjMuNjUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgICAgZmlsbC1ydWxlOiBldmVub2RkOwogICAgICAgIHN0cm9rZTogIzAwMDsKICAgICAgICBzdHJva2UtbWl0ZXJsaW1pdDogMTA7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAxMnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iX+WbvuWxgl8xLTIiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiPgogICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzQuOTEsMy44M2MtMTA2LDEyOCwxMjMsMTA1LTIsMjU2Ii8+CiAgPC9nPgo8L3N2Zz4=);
+  }
+
+  &::before {
+    background-position-x: 0;
+    animation: bgUp $steam-speed * 0.95 linear infinite;
+    opacity: 0.2;
+  }
+
+  &::after {
+    background-position-x: $steam-size * 0.25;
+    animation: bgUp $steam-speed * 0.9 linear infinite;
+    opacity: 0.4;
+  }
+}
