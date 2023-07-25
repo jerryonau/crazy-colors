@@ -110,4 +110,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.streamer-bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
 }/*# sourceMappingURL=cartoon.css.map */

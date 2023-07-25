@@ -636,7 +636,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/home/book-bg.png?v=8apnlcrk");
+  background-image: url("../images/home/book-bg.png?v=li91r7hs");
 }
 .section-call .row {
   align-items: center;
@@ -697,10 +697,10 @@ h6 {
   border-radius: 300px 0 0 300px;
 }
 .section-case .carousel button .carousel-control-prev-icon {
-  background-image: url(../images/home/icon/arrow-left.svg?v=8apnlcrk);
+  background-image: url(../images/home/icon/arrow-left.svg?v=li91r7hs);
 }
 .section-case .carousel button .carousel-control-next-icon {
-  background-image: url(../images/home/icon/arrow-right.svg?v=8apnlcrk);
+  background-image: url(../images/home/icon/arrow-right.svg?v=li91r7hs);
 }
 .section-case .carousel .case-img {
   overflow: hidden;
