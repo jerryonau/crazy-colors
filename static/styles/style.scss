@@ -137,8 +137,7 @@ body {
     background-color: $header-background-color;
     .navbar-brand {
       img {
-        width: 150px;
-        height: 39px;
+        height: 80px;
       }
     }
 
@@ -229,7 +228,7 @@ h6 {
     text-transform: uppercase;
   }
   svg {
-    fill: #fff;
+    fill: #666;
     width: 20px;
     height: 20px;
   }
@@ -385,6 +384,73 @@ h6 {
           }
         }
       }
+    }
+  }
+}
+
+.round-img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 20px solid rgba($color: #000, $alpha: 0.4);
+  transition: $all-transitions;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    transition: $all-transitions;
+  }
+
+  &:hover {
+    border: 20px solid rgba($color: #000, $alpha: 0.2);
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.trapezoid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  transition: $all-transitions;
+  margin-left: -20px;
+  span {
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    background: #ffc999;
+    position: relative;
+    margin-left: -20px;
+    padding-right: 40px;
+    transition: $all-transitions;
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    background: #ffc999;
+    width: 50px;
+    height: 50px;
+    transform: skew(10deg);
+    border-radius: 0 0 0 15px;
+    transition: $all-transitions;
+  }
+
+  &:hover,
+  &.active {
+    span {
+      background: #212529;
+    }
+    &:before,
+    &:after {
+      background: #212529;
     }
   }
 }
@@ -658,4 +724,14 @@ h6 {
   }
 }
 
+.about {
+  .owner {
+    width: 320px;
+    height: 320px;
+    img {
+      width: 320px;
+      height: 320px;
+    }
+  }
+}
 @import "responsive";

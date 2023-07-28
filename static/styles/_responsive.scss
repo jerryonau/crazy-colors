@@ -2,6 +2,9 @@
   .header {
     &-navbar {
       .navbar-brand {
+        img {
+          height: 40px;
+        }
       }
     }
   }
