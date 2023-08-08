@@ -75,6 +75,9 @@ a {
 
 body {
   background: $body-background-color;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   color: $body-color;
   font-family: var(--font-family-base);
   background-color: $body-background-color;
@@ -507,6 +510,22 @@ h6 {
   }
 
   &-banner {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/home/carousel/bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 0.1;
+      z-index: -1;
+    }
     padding: 0;
     .row {
       align-items: center;
@@ -517,6 +536,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
     .choose-item {
       display: flex;
       align-items: center;
