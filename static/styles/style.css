@@ -1122,3 +1122,10 @@ h6 {
     width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+.hero {
+  height: auto;
+  width: 100%;
+  margin: 30px;
+}
